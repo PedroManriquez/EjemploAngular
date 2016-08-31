@@ -1,0 +1,21 @@
+<!-- Archivo index.html es el archivo principal, este contiene la aplicación que desarrollaremos en angular
+	además del controlador principal, esta página recibirá toda la lógica que implementemos en nuestro proyecto
+	basado en esta tecnologia para el FrontEnd de nuestro sistema -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script src="lib/js/angular.min.js"></script>
+	<script src="app/app.js"></script>
+</head>
+<!-- ng-app es la directiva nativa de angular que me permite declarar la aplicación que controlaremos con los
+	distintos controllers que implementemos, en este caso con la directiva ng-controller -->
+<body ng-app="aplicacion" ng-controller="AplicacionController">
+	<!-- la doble expresión de {{}} nos permite acceder desde nuestro archivo app.js mediante el uso del $scope
+		es decir en este caso "ejemplo" funciona como una simple variable y nuestro {{}} como un print sobre nuestro 
+		navegador " -->
+	{{ejemplo}}
+</body>
+</html>
