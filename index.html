@@ -18,19 +18,16 @@
 </head>
 <!-- ng-app es la directiva nativa de angular que me permite declarar la aplicación que controlaremos con los
   distintos controllers que implementemos, en este caso con la directiva ng-controller -->
-<body ng-app="aplicacion" ng-controller="AplicacionController">
+<body ng-app="app" ng-controller="applicationController">
   <!-- la doble expresión de {{}} o ng-bind nos permite acceder desde nuestro archivo app.js mediante el uso del $scope
     es decir en este caso "ejemplo" funciona como una simple variable y nuestro {{}} como un print sobre nuestro 
     navegador " -->
+  <nav-example></nav-example> 
+  <h1 ng-bind="ejemplo"></h1>
   <div class="container">
-    <h1 ng-bind="ejemplo"></h1>
 
     <div class="row">
-      <div class="col-lg-4">
-        <div mi-panel1></div>
-      </div>
-      <div class="col-lg-4">
-        <mi-panel2></mi-panel2>
+      <div class="col-lg-4" ng-include="menu">
       </div>
     </div>
   </div>
